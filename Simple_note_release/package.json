@@ -1,0 +1,11 @@
+{
+  "name": "simple-notes-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

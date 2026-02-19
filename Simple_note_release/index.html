@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Simple Notes</h1>
+
+      <section class="notes-input">
+        <textarea id="note-input" placeholder="Type your note here..."></textarea>
+
+        <div class="image-input-row">
+          <label class="file-label" for="image-input">Choose Image</label>
+          <input id="image-input" type="file" accept="image/*" />
+          <button id="clear-image" type="button" class="secondary-btn">Remove Image</button>
+        </div>
+
+        <div id="image-preview" class="image-preview hidden">
+          <img id="preview-img" alt="Selected preview" />
+        </div>
+
+        <button id="add-note">Add Note</button>
+      </section>
+
+      <div class="notes-list" id="notes-list"></div>
+      <p class="hint">Shared mode: all visitors on the deployed site see the same note list.</p>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
