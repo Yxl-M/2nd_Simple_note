@@ -1,0 +1,13 @@
+{
+  "name": "simple-notes-shared",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^10.0.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "echo \"no build\"",
+    "dev": "netlify dev"
+  }
+}
